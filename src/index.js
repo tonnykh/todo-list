@@ -1,1 +1,2 @@
-console.log("1212");
+import './style.css';
+

@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background-light: #FFFFFF;
+    --background-light-grey: #EEEFF2;
+    --background-dark-grey: #E4E5E9;
+
+    --nav-background-hover: #F7F6F7
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    padding: 40px;
+    padding-right: 0;
+    color: black;
+    background-color: var(--background-light-grey);
+}
+
+h1 {
+    font-size: 2.2rem;
+    padding-bottom: 21px;
+}
+
+h2 {
+    font-weight: 400;
+    padding: 15px 15px 10px 2px;
+}
+
+
+/* HEADER */
+header  {
+    padding: 37px;
+    height: 90vh;
+    border-radius: 13px;
+    background-color: var(--background-light);
+    width: 25vw;
+}
+
+.default-project {
+    padding: 18px;
+}
+
+.default-project a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    font-weight: 500;
+}
+
+
+/* MAIN */
+main {
+    margin: 20px auto auto;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+#input-add-task {
+    padding: 15px;
+    border-radius: 13px;
+    border-style: none;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    background-color: var(--background-dark-grey);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.task {
+    padding: 15px;
+    margin-bottom: 9px;
+    background-color: var(--background-light);
+    border-radius: 13px;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+
+/* Hover */
+.default-project:hover {
+    background-color: var(--nav-background-hover);
+    border-radius: 13px;
+}
