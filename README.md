@@ -1,3 +1,3 @@
 # Todo List
 
-Todo list app created with HTML, CSS & JS.
+Todo list app created with HTML, CSS & JS.clear
