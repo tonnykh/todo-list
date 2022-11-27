@@ -13,11 +13,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- <script src="https://kit.fontawesome.com/4c536a6bd5.js" crossorigin="anonymous"></script> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
     <header>
-        
+
         <h1 class="logo">Todo List</h1>
 
         <nav>
@@ -43,10 +47,34 @@
         </div>
 
         <ul>
-            <li class="task">Hit the gym</li>
-            <li class="task">Buy eggs</li>
-            <li class="task">Call mom</li>
-            <li class="task">Sleep early</li>
+            <li class="task">
+                <input type="checkbox" id="task-1">
+                <label for="task-1">
+                    <span class="custom-checkbox"></span>
+                    Hit the gym
+                </label>
+            </li>
+            <li class="task">
+                <input type="checkbox" id="task-2">
+                <label for="task-2">
+                    <span class="custom-checkbox"></span>
+                    Buy eggs
+                </label>
+            </li>
+            <li class="task">
+                <input type="checkbox" id="task-3">
+                <label for="task-3">
+                    <span class="custom-checkbox"></span>                    
+                    Call mom
+                </label>
+            </li>
+            <li class="task">
+                <input type="checkbox" id="task-4">
+                <label for="task-4">
+                    <span class="custom-checkbox"></span>                    
+                    Sleep early
+                </label>
+            </li>
         </ul>
 
     </main>
