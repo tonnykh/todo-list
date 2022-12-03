@@ -7,7 +7,7 @@
     <title>Todo List</title>
 
     <!-- link JS -->
-    <script src="main.js" render></script>
+    <script src="main.js" defer></script>
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,6 +20,7 @@
 </head>
 <body>
 
+    <!-- Sidebar -->
     <header>
 
         <h1 class="logo">Todo List</h1>
@@ -37,13 +38,19 @@
 
 
     <!-- Main -->
-
     <main>
 
         <h2>Home</h2>
 
         <div class="add-task">
+            <input type="checkbox">
+
             <input type="text" id="input-add-task" placeholder="Write a new task..">
+
+            <label for="input-add-task">
+                <span class="custom-checkbox hide"></span>
+            </label>
+
         </div>
 
         <ul>

@@ -66,6 +66,42 @@ main {
     gap: 13px;
 }
 
+.add-task {
+    display: flex;
+    flex-direction: row-reverse;
+    /* line-height: 1.7; */
+}
+
+.hide {
+    /* background-color: red;
+    color: red; */
+    /* content: ''; */
+    position: absolute;   
+    visibility: hidden;
+    margin-right: 7px;
+
+}
+
+
+
+.add-task:focus-within {
+
+    /* color: red; */
+    display: flex;
+    align-items: center;
+
+    padding: 15px;
+    /* margin-bottom: 9px; */
+    background-color: var(--background-light);
+    border-radius: 13px;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.add-task label {
+    /* margin-right: 7px; */
+}
+
 #input-add-task {
     padding: 15px;
     border-radius: 13px;
@@ -76,6 +112,36 @@ main {
     font-weight: 300;
     font-size: 0.9rem;
 }
+
+
+/* after focus */
+#input-add-task:focus {    
+    border-radius: initial;
+    padding: initial;
+    background-color: initial;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+
+    border-style: none;
+    outline: none;
+}
+
+
+#input-add-task:focus + label .hide {
+    visibility: visible;
+    /* color: red; */
+    position: relative;
+    /* background-color: red; */
+
+}
+
+
+
+
+
+
 
 .task {
     padding: 15px;
@@ -102,6 +168,9 @@ main {
     align-items: center;
     justify-content: center;
     background-color: var(--background-light-grey);
+
+    cursor: pointer;
+
 }
 
 .custom-checkbox:after {
@@ -156,7 +225,7 @@ main {
     border-radius: 13px;
 }
 
-label:hover .custom-checkbox {
+/* .custom-checkbox:hover {
     transform: scale(1.15);
     transition: transform 200ms ease-in-out;
-}
+} */
