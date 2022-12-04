@@ -227,6 +227,30 @@ main {
     cursor: pointer;
 }
 
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 30px;
+    left: 100px;
+    width: 100%;
+}
+
+a {
+    color: inherit;
+
+}
+
+.fa-github {
+    margin-left: 4px;
+}
+
+.fa-github:hover {
+    transform: rotate(360deg) scale(1.4);
+    transition: transform 0.3s ease-in-out;
+}
+
 
 /* Hover */
 .default-project:hover {
