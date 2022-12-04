@@ -111,6 +111,7 @@ main {
     background-color: var(--background-dark-grey);
     font-weight: 300;
     font-size: 0.9rem;
+    line-height: 1.7;
 }
 
 
@@ -150,6 +151,14 @@ main {
     border-radius: 13px;
     font-weight: 400;
     font-size: 0.9rem;
+}
+
+.delete-icon {
+    float: right;
+    position: relative;
+    top: 5px;
+    right: 4px;
+    /* display: none; */
 }
 
 [type="checkbox"] {
@@ -223,6 +232,11 @@ main {
 .default-project:hover {
     background-color: var(--nav-background-hover);
     border-radius: 13px;
+}
+
+.task:hover .delete-icon {
+    display: block;
+    cursor: pointer;
 }
 
 /* .custom-checkbox:hover {

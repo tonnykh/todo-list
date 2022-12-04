@@ -1,21 +1,22 @@
 import './style.css';
 import task from './modules/task';
 import project from './modules/project';
-import addTaskWithoutBtn from './modules/ui';
 
-import { addToLocalStorage, getTaskFromLocalStorage } from './modules/storage';
+import { addToLocalStorage, getLocalStorageDataInArray } from './modules/storage';
 
-addTaskWithoutBtn();
-
-project();
-
-const task1 = task("sleep");
-const task2 = task("eat");
-
-console.log("from index.js....task name--", task1.name);
-
-console.log("from index.js....task name--", task2.name);
-
-// addToLocalStorage("uuuuuhh");
+import {  deleteTask, displayNewTask, makeTaskIdInOrder, showAllTaskFromLocalStorage } from './modules/ui';
 
 
+
+// addToLocalStorage();
+// addTaskToLocalStorage();
+
+displayNewTask();
+showAllTaskFromLocalStorage();
+
+deleteTask();
+
+// getLocalStorageDataInArray();
+// showNewAddedTask();
+// makeTaskIdInOrder();
+// project();

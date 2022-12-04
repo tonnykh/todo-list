@@ -4,7 +4,10 @@
 function addToLocalStorage(taskText) {
     let tasks = localStorage.getItem("tasks");
     let taskObj = [];
-    console.log("TASKS----", tasks);
+
+
+    // console.log('taskobj0000', taskObj);
+    // console.log("TASKS----", tasks);
 
     // console.log(typeof(taskObj));
 
@@ -17,25 +20,42 @@ function addToLocalStorage(taskText) {
     localStorage.setItem("tasks", JSON.stringify(taskObj));
 
 
-    console.log(taskObj);
-    console.log("TASKS----", tasks);
+    // console.log('taskObj-------', taskObj);
+    // console.log("TASKS----", tasks);
 }
 
 
 // get the last item from localStorage
 
-function getTaskFromLocalStorage() {
+function getLocalStorageDataInArray() {
     let tasks = localStorage.getItem("tasks");
+    let taskObj = [];
 
     if (tasks == null){
         taskObj = [];
     } else {
-        taskObj = tasks;
+        taskObj = JSON.parse(tasks);
     }
 
-    return taskObj.pop();
+    return taskObj;
+}
+
+
+function deleteTaskFromStorage(index) {
+    let tasks = localStorage.getItem("tasks");
+    let taskObj = [];
+
+    if (tasks == null){
+        taskObj = [];
+    } else {
+        taskObj = JSON.parse(tasks);
+    }
+
+    taskObj.splice(index, 1);
+    localStorage.setItem("tasks", JSON.stringify(taskObj));
+
 }
 
 
 
-export { addToLocalStorage, getTaskFromLocalStorage };
+export { addToLocalStorage, getLocalStorageDataInArray, deleteTaskFromStorage };
